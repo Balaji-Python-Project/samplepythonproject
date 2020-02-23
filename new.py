@@ -41,17 +41,6 @@ def message():
     return "message sent"
 
 
-@app.route('/customer', methods=['POST'])
-def customer():
-    data = request.form
-    pusher.trigger(u'customer', u'add', {
-        u'name': data['name'],
-        u'position': data['position'],
-        u'office': data['office'],
-        u'age': data['age'],
-        u'salary': data['salary'],
-    })
-    return "customer added"
 #######chaitanya written code ends here ##########################################
 
 if __name__ == '__main__':
