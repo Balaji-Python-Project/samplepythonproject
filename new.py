@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from flask import Flask, render_template, request
 from pusher import Pusher
 
@@ -53,7 +52,7 @@ def customer():
         u'salary': data['salary'],
     })
     return "customer added"
-
+#######chaitanya written code ends here ##########################################
 
 if __name__ == '__main__':
     app.run(debug=True)
